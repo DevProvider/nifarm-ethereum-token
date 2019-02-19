@@ -37,6 +37,7 @@ contract ERC20Interface {
     function transfer(address to, uint tokens) public returns (bool success);
     function approve(address spender, uint tokens) public returns (bool success);
     function transferFrom(address from, address to, uint tokens) public returns (bool success);
+    function burn(uint256 _value) public returns (bool success);
 
     event Transfer(address indexed from, address indexed to, uint tokens);
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
@@ -165,6 +166,13 @@ contract nifarm is ERC20Interface, SafeMath, Owned{
         //The transfer emmits to store the transaction.
         emit Transfer(_from,_to,_value);
         //returns true if everything above gets executed successfully.
+        return true;
+    }
+
+    function burn(uint256 _value) public returns (bool success) {
+        require(balances[msg.sender] >= _value);   // Check if the sender has enough
+        balances[msg.sender] -= _value;            // Subtract from the sender
+        _totalSupply -= _value;                      // Updates totalSupply
         return true;
     }
 
