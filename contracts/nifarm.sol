@@ -111,7 +111,7 @@ contract nifarm is ERC20Interface, SafeMath, Owned{
         name = "NIFARM";
         symbol = "NIF";
         standard = "NIF Token v1.0";
-        decimals = 18;
+        decimals = 0;
         _totalSupply = 20000000;
         //alocate the initial supply.
         balances[msg.sender] = _totalSupply;

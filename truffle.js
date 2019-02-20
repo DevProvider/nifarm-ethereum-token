@@ -13,17 +13,23 @@
  */
 
  var HDWalletProvider = require("truffle-hdwallet-provider");
- var mnemonic = "soft moral grass same outside hard anger secret silly tell choice jaguar found state control";
 
 module.exports = {
   
     networks: {
     ropsten: {
       provider: function() {
-        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/2d24b86e8d884f5aa7a11e78dbb3c87d")
+          return new HDWalletProvider('seed acquire one demand decide morning roast hotel degree city enable super', "https://ropsten.infura.io/v3/2d24b86e8d884f5aa7a11e78dbb3c87d")
       },
-      network_id: 3
+      network_id: 3,
+      gasPrice: 250000000
+    },
+    development:{
+      host:"127.0.0.1",
+      port: 7545,
+      network_id : "*"
     }
+
   },
 
    solc :{

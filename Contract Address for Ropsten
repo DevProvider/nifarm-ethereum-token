@@ -1,0 +1,109 @@
+danyal@danyal-HP-EliteBook-8470p:~/gitRepos/Devprovider/nifarm (master)$ truffle migrate --reset --network ropsten
+⚠️  Important ⚠️
+If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'ropsten-fork'
+> Network id:      3
+> Block gas limit: 8000029
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > account:             0xf0c662da0a3edb66f01E6b294e68d47c4057Fe21
+   > balance:             0.9992262995
+   > gas used:            269908
+   > gas price:           0.25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000067477 ETH
+
+   -------------------------------------
+   > Total cost:         0.000067477 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'nifarm'
+   ------------------
+   > account:             0xf0c662da0a3edb66f01E6b294e68d47c4057Fe21
+   > balance:             0.9986318275
+   > gas used:            2350854
+   > gas price:           0.25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0005877135 ETH
+
+   -------------------------------------
+   > Total cost:        0.0005877135 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.0006551905 ETH
+
+⚠️  Important ⚠️
+If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8000000
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x93f58e167ea2e0ffce478b0923296e1d94e34c7055fe31607f2b74ebb1e0c68e
+   > Blocks: 2            Seconds: 10
+   > contract address:    0xA26196d4d27F806e2C8C00a526958647eD11c3C7
+   > account:             0xf0c662da0a3edb66f01E6b294e68d47c4057Fe21
+   > balance:             0.9992225495
+   > gas used:            284908
+   > gas price:           0.25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000071227 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.000071227 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'nifarm'
+   ------------------
+   > transaction hash:    0x52842986d5b120773b42e23b2cd052f4b00b8980054b4e840407747da0b9c96d
+   > Blocks: 4            Seconds: 102
+   > contract address:    0x7ED386bA1134ac7Cb9B960d097B1A8Aede18d83C
+   > account:             0xf0c662da0a3edb66f01E6b294e68d47c4057Fe21
+   > balance:             0.9985980775
+   > gas used:            2455854
+   > gas price:           0.25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0006139635 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:        0.0006139635 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.0006851905 ETH
+

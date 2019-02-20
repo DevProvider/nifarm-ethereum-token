@@ -14,8 +14,8 @@
     "url": "git+https://github.com/DevProvider/nifarm-ethereum-token.git"
   },
   "devDependencies": {
-    "dotenv": "^4.0.0",
-    "truffle-hdwallet-provider": "0.0.5"
+    "dotenv": "^6.2.0",
+    "truffle-hdwallet-provider": "^1.0.0-web3one.5"
   },
   "author": "",
   "license": "ISC",
