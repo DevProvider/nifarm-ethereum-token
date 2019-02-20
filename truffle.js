@@ -23,8 +23,15 @@ module.exports = {
         return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/2d24b86e8d884f5aa7a11e78dbb3c87d")
       },
       network_id: 3
-    }   
-  }
+    }
+  },
+
+   solc :{
+      optimizer:{
+        enable:true,
+        runs: 200
+      }
+    }
 
   // See <http://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
